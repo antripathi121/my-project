@@ -1,0 +1,27 @@
+#slider{
+    background: url('https://fanfight.com/static/desktopBg.82b9c977.jpg');
+    background-size:cover;
+    
+    /* background-repeat: no-repeat; */
+    background-size: 1350px 500px;
+    width: 100%;
+    /* background-attachment: fixed; */
+}
+#slider .img{
+    height: 500px;
+    /* border: 1px solid; */
+}
+.slide-text{
+    /* float: right; */
+text-align:center ;
+margin-top: 100px;
+color: white;
+}
+
+.btn{
+    color: green;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 15px;
+    
+}

@@ -1,9 +1,22 @@
   /*===== Vertical Timeline =====*/
+  #timelineSection{
+background-image: url('https://www.cricket365.com/content/uploads/2016/08/picture-5333.jpg');
+    background-repeat: no-repeat;
+    background-size:cover; 
+    position: relative;
+    /* background-color: #9ef19e; */
+    /* opacity: 0.6; */
+    padding-bottom: 20px;
+    z-index: -999;
+  }
   #conference-timeline {
+    /* background-color: #f3e9e9; */
     position: relative;
     max-width: 920px;
     width: 100%;
     margin: 0 auto;
+    padding: 10px;
+    z-index: -2;
   }
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
@@ -23,8 +36,8 @@
   #conference-timeline .conference-center-line {
     position: absolute;
     width: 3px;
-    height: 100%;
-    top: 0;
+    height: 88%;
+    /* top: 0; */
     left: 50%;
     margin-left: -2px;
     background: #00b0bd;
@@ -95,7 +108,7 @@
     color: #fff;
   }
   .timeline-article .content-left:before {
-    content: "\f0da";
+    content: "\f177";
     right: -8px;
   }
   .timeline-article .content-right:before {
@@ -178,3 +191,20 @@
     
   }
   /*===== // Resonsive Vertical Timeline =====*/
+
+
+  .how{
+    text-align: center;
+    padding-top: 20px; 
+  }
+  .play{
+    color: black;
+    background-color: #f3e9e9;
+    /* border-width:5px;
+    border-bottom: 0px;   */
+    /* border-style:groove; */
+    border-radius: 15px 15px 0px 0px;
+    width: 220px;
+    padding: 5px;
+    
+  }

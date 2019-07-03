@@ -1,1 +1,15 @@
-<p>carousel works!</p>
+<section id="slider" class="container-fluid" >
+    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (breakpoint)="breakpoint($event)" >
+     <div class="" ngxSlickItem *ngFor="let slide of slides">
+          <div style="float: left;"> <img class="img" src="{{ slide.img }}" alt="" >
+          </div>
+              <div class="slide-text">
+                <h1>{{slide.text}}</h1><br>
+                <h3>{{slide.h3}}</h3><br>
+                <button class="btn">Join For Free</button>
+              </div>
+     
+        </div>
+     
+    </ngx-slick>
+   </section>

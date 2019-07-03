@@ -7,22 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent  {
 
-  title = 'ngSlick';
+  // title = 'ngSlick';
 
 
-  slides = [
-    {img: "../assets/images/1.jpg"},
-    {img: "../assets/images/2.jpg"},
-    {img: "../assets/images/3.jpg"},
-    {img: "../assets/images/4.jpg"},
-  ];
+  // slides = [
+  //   {img: "../assets/images/1.jpg"},
+  //   {img: "../assets/images/2.jpg"},
+  //   {img: "../assets/images/3.jpg"},
+  //   {img: "../assets/images/4.jpg"},
+  // ];
 
-  slideConfig = {
-    "slidesToShow": 1, 
-    "slidesToScroll": 1,
-    "infinite": true,
-    "autoplay": true,
-    "autoplaySpeed": 1500
-  };
+  // slideConfig = {
+  //   "slidesToShow": 1, 
+  //   "slidesToScroll": 1,
+  //   "infinite": true,
+  //   "autoplay": true,
+  //   "autoplaySpeed": 1500
+  // };
 
 }
