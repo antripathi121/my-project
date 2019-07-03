@@ -1,0 +1,18 @@
+<!-- Image-carousel -->
+<ngx-slick-carousel class="carousel" 
+#slickModal="slick-carousel" 
+[config]="slideConfig">
+<div ngxSlickItem *ngFor="let slide of slides" class="slide">
+<img src="{{ slide.img }}" alt="">
+</div>
+</ngx-slick-carousel>
+
+<!-- Image-carousel-End -->
+<!-- How to play -->
+
+<!-- Vertical Timeline -->
+<app-timeline></app-timeline>
+
+<!-- upcoming-matches -->
+<app-cards></app-cards>
+<!-- upcoming-matches -->
