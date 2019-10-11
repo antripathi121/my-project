@@ -79,7 +79,7 @@ background-image: url('https://www.cricket365.com/content/uploads/2016/08/pictur
   .timeline-article p {
     margin: 0 0 0 60px;
     padding: 0;
-    font-weight: 400;
+    /* font-weight: 400; */
     color: #242424;
     font-size: 14px;
     line-height: 24px;
@@ -108,12 +108,15 @@ background-image: url('https://www.cricket365.com/content/uploads/2016/08/pictur
     color: #fff;
   }
   .timeline-article .content-left:before {
-    content: "\f177";
-    right: -8px;
+    /* content: "\f177"; */
+    content: "\f112";
+    right: -23px;
+    margin-top: -20px;
   }
   .timeline-article .content-right:before {
-    content: "\f0d9";
-    left: -8px;
+    content: "\f064";
+    left: -23px;
+    margin-top: -20px;
   }
   .timeline-article .meta-date {
     position: absolute;
@@ -175,22 +178,32 @@ background-image: url('https://www.cricket365.com/content/uploads/2016/08/pictur
     .timeline-article .content-left:before {
       content: "\f0d9";
       right: auto;
-      left: -8px;
+      left: -9px;
     }
     .timeline-article .content-right:before {
-      display: none;
+      /* display: none; */
+      content: "\f0d9";
+      right: auto;
+      left: -9px;
     }
+    /* .timeline-article .content-right:before {
+      content: "\f0d9";
+      right: auto;
+      left: -18px;
+    } */
   }
   @media only screen and (max-width: 400px) {
     .timeline-article p {
       margin: 0;
+      
+      /* font-weight: inherit; */
     }
     .timeline-article p span.article-number {
       display: none;
     }
     
   }
-  /*===== // Resonsive Vertical Timeline =====*/
+  /* ===== // Resonsive Vertical Timeline ===== */
 
 
   .how{

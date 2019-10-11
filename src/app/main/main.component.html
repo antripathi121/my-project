@@ -9,5 +9,19 @@
 <app-timeline></app-timeline>
 
 <!-- upcoming-matches -->
-<app-cards></app-cards>
+<div class="upcoming container-fluid">
+  <ngx-slick class="cards" #slickModal="slick-modal" [config]="slideConfig2">
+    <div ngxSlickItem *ngFor ="let card of cards" class="upcomingCard">
+        <app-cards class="upcoming-matches"></app-cards>
+    </div>
+    </ngx-slick>
+    
+</div>
+
+
+
 <!-- upcoming-matches -->
+<!-- FAQs -->
+<app-faq></app-faq>
+<!-- Footer -->
+<app-footer></app-footer>

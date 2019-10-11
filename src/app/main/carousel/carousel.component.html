@@ -1,13 +1,17 @@
 <section id="slider" class="container-fluid" >
-    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (breakpoint)="breakpoint($event)" >
+    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig1" (breakpoint)="breakpoint($event)" >
      <div class="" ngxSlickItem *ngFor="let slide of slides">
-          <div style="float: left;"> <img class="img" src="{{ slide.img }}" alt="" >
-          </div>
-              <div class="slide-text">
-                <h1>{{slide.text}}</h1><br>
-                <h3>{{slide.h3}}</h3><br>
-                <button class="btn">Join For Free</button>
-              </div>
+       <div class="row">
+          <div class="col-md" > 
+              <img class="img" src="{{ slide.img }}" alt="" >
+            </div>
+                <div class="col-md slide-text" >
+                  <h1>{{slide.text}}</h1><br>
+                  <h3>{{slide.h3}}</h3><br>
+                  <button class="btn">Join For Free</button>
+                </div>
+       </div>
+          
      
         </div>
      

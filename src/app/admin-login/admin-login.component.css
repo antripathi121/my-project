@@ -1,0 +1,13 @@
+.adminlogin{
+    background-color: aqua;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/* .logincard{
+  padding-left: 20%;
+} */
+.logincard .example-full-width{
+width: 80%;
+margin-left: 7%;
+}

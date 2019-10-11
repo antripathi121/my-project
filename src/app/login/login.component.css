@@ -1,0 +1,14 @@
+.logincard{
+    position: absolute;
+    top: 70px;
+    right: 10px;
+}
+.cross{
+    background-color:red;
+    color: white;
+    cursor: pointer;
+    float: right; 
+    width: 20px;
+    padding-left: 5px;
+    margin-top: -40px;
+}

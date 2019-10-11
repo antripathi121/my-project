@@ -1,0 +1,49 @@
+<section id="calendar">
+  <div class="row" style="padding: 20px;">
+    <div class="col-md-4">
+     <mat-card style="margin-left: 20px;">
+      <div class="events">
+
+          
+              <div class="md-form">
+              
+              <input matInput *ngIf="openinput" type="text" id="rec4" #input (change)="store(input.value); input.value=''; openinput=!openinput"> 
+              <!-- <label for="rec4" class="">Contact Number</label> -->
+              </div>
+      
+      
+      <ul>
+        <li *ngFor="let d of data; let i=index; trackBy: trackByFn" cdkDrag>
+           {{d}} <span class="rounded-circle bg-danger" style="color:white; padding: 0px 4px 1px 5px; cursor:pointer;" (click)="removeItem(i)">   x</span>
+        </li>
+      </ul>
+
+          <!-- <ol>
+              
+              <li *ngIf="animal">
+                 <i>{{animal}}</i>
+              </li>
+            </ol> -->
+      </div>
+      <button mat-raised-button (click)="openinput=!openinput">Add Event</button>
+     </mat-card>
+    </div>
+    <div class="col-md-8">
+        <mat-card>
+          <button (click)="updateEvents()">Update events</button>
+      
+          <ng-container *ngIf="options">
+            <ng-fullcalendar
+              #fullcalendar
+              (dateClick)="dateClick($event)"
+              (clickButton)="clickButton($event)"
+              (eventDragStop)="eventDragStop($event)"
+              [eventsModel]="eventsModel"
+              [options]="options"
+              (eventClick)="eventClick($event)"
+            ></ng-fullcalendar>
+          </ng-container>
+      </mat-card>
+    </div>
+  </div>
+</section>

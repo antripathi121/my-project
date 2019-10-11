@@ -1,0 +1,53 @@
+.faq{
+    background: black;
+    
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    color: aliceblue;
+}
+.q{
+    /* display: flex; */
+}
+.left,.right{
+    /* margin-top: 50px; */
+    /* padding: 50px; */
+}
+
+.question{
+ margin: 20px;
+ /* font-weight:100; */
+}
+.answer{
+   margin: 0 20px;
+   margin-bottom: 10px;
+   font-weight:100;
+   font-family: cursive;
+   font-size: 14px;
+}
+.one-faq{
+    background-color: antiquewhite;
+    padding: 20px;
+}
+@media screen and (max-width:460px){
+    .answer{
+        padding-top: 30px;
+        /* padding-bottom: 20px; */
+        margin: 0;
+    }
+
+    .question{
+        padding-top: 40px;
+        margin: 0;
+        /* padding-bottom: 50px; */
+    }
+    .one-faq{
+        margin-top: 5px;
+    }
+    }
+
+
+    /* ::ng-deep .specific-class > .mat-expansion-indicator:after {
+        color: rgb(202, 35, 35);
+      } */

@@ -11,14 +11,14 @@ export class CarouselComponent implements OnInit {
 
   slides = [
     {text: 'h1 text..1', h3: 'h3 text 1', img: 'https://fanfight.com/static/wc-slider1.29549b20.png'},
-    {text: 'h1 text..2', h3: 'h3 text 2', img: 'https://fanfight.com/static/match.6c76978b.png'},
+    {text: 'h1 text..2', h3: 'h3 text 2', img: 'https://fanfight.com/static/match.f6c880ac.png'},
     {text: 'h1 text..3', h3: 'h3 text 3', img: 'https://fanfight.com/static/maruthi-slider.72844f84.png'},
     {text: 'h1 text..4', h3: 'h3 text 4', img: 'https://fanfight.com/static/offer.66c44ae4.png'},
    
   ];
   
 
-  slideConfig = {
+  slideConfig1 = {
     "slidesToShow": 1,
     "slidesToScroll": 1,
     // "dots": true,

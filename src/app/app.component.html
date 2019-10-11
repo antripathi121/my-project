@@ -1,1 +1,2 @@
-<app-main></app-main>
+<app-main *ngIf="!this.router.url.includes('admin')"></app-main>
+<router-outlet></router-outlet>

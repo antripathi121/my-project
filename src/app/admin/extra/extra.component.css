@@ -1,0 +1,40 @@
+.extra {
+
+	border-top: 1px solid #585858;
+	border-bottom: 1px solid #000;
+
+}
+
+.extra-inner {
+	padding: 20px 0;
+	
+	font-size: 11px;
+	color: #BBB;
+	
+	background: #1A1A1A;
+}
+
+.extra a {
+	color: #666;
+}
+
+.extra h4 {
+	margin-bottom: 1em;
+	
+	font-weight: 400;
+}
+
+.extra ul {
+	padding: 0;
+	margin: 0;
+}
+
+.extra li {
+	margin-bottom: .6em;
+	
+	list-style: none;
+}
+.span3 h4{
+    font-size: 16px;
+    
+}

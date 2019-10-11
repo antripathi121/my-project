@@ -1,0 +1,58 @@
+<mat-card class="registercard">
+    <mat-card-title>Register </mat-card-title>
+    <span class="cross" routerLink="/">X</span>
+    <!-- <mat-card-subtitle>sub-title</mat-card-subtitle> -->
+    <mat-card-content>
+        <form class="example-form" [formGroup]="signupForm" (ngSubmit)="signupUser()" novalidate>
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                      <mat-form-field class="example-full-width" >
+                      <input  matInput placeholder="id" formControlName="id" required>
+                      </mat-form-field>
+                    </td>
+                  </tr>
+                <tr>
+                    <td>
+                      <mat-form-field class="example-full-width" >
+                      <input  matInput placeholder="first name" formControlName="fname" required>
+                      </mat-form-field>
+                    </td>
+                  </tr>
+                  <tr>
+                        <td>
+                          <mat-form-field class="example-full-width" >
+                          <input  matInput placeholder="last name" formControlName="lname" required>
+                          </mat-form-field>
+                        </td>
+                      </tr>
+              <tr>
+                <td>
+                  <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Username" formControlName="username" required>
+                  </mat-form-field>
+                </td>
+              </tr>
+              <tr>
+                  <td>
+                    <mat-form-field class="example-full-width" >
+                    <input  matInput placeholder="email" formControlName="email" required>
+                    </mat-form-field>
+                  </td>
+                </tr>
+              <tr>
+              <td><mat-form-field class="example-full-width">
+                <input matInput placeholder="Password" type="password" formControlName="password" required>
+              </mat-form-field></td>
+            </tr></table>
+            <button mat-raised-button  color="primary">Register</button>
+          </form>
+          <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    </mat-card-content>
+    <!-- <img mat-card-image src="assets/image/pic3.jpg"> -->
+    <mat-card-actions>
+        
+       <span class="already"> already registered ? <a routerLink="/login">Login</a></span>
+    </mat-card-actions>
+    <!-- <mat-card-footer class="already"> already registered ? <a routerLink="/">Login</a></mat-card-footer> -->
+  </mat-card>

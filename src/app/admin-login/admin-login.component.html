@@ -1,0 +1,46 @@
+<div class="adminlogin">
+   <div class="row">
+       <div class="col-md-3">
+
+       </div>
+       <div class="col-md">
+            <mat-card class="logincard">
+             <mat-card-title>Admin Login</mat-card-title>
+                 <!-- <span class="cross" routerLink="/adminlogin"><i class="fa fa-window-close" aria-hidden="true"></i></span> -->
+                    <!-- <mat-card-subtitle>sub-title</mat-card-subtitle> -->
+                 <form class="example-form" [formGroup]="loginForm" (ngSubmit)="loginAdmin()">
+                    <mat-card-content>
+                        
+                            <table class="example-full-width" cellspacing="0">
+                                        
+                              <tr>
+                                <td>
+                                  <mat-form-field class="example-full-width" >
+                                  <input  matInput placeholder="Username" formControlName="username" required>
+                                  </mat-form-field>
+                                </td>
+                              </tr>
+                              
+                              <tr>
+                              <td><mat-form-field class="example-full-width">
+                                <input matInput placeholder="Password" type="password" formControlName="password" required>
+                              </mat-form-field></td>
+                            </tr></table>
+                          
+                          <!-- <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner> -->
+                    </mat-card-content>
+                    <!-- <img mat-card-image src="assets/image/pic3.jpg"> -->
+                    <mat-card-actions>
+                        <button mat-raised-button  color="primary" >Login</button>
+                    </mat-card-actions>
+                  </form>
+                    <!-- <mat-card-footer>mat card footer</mat-card-footer> -->
+                  </mat-card>
+       </div>
+
+       <div class="col-md-3">
+           
+        </div>
+   </div>
+</div>
+    

@@ -1,0 +1,31 @@
+<!-- <p>chatbox works!</p> -->
+<section id="chatbox">
+<div class="row">
+    <div class="col-md">
+
+    </div>
+    <div class="col-md">
+        <h3>chatbox</h3>
+        <mat-card style="border: 2px solid;">
+            <div style="height: 200px; width: 300px;">
+                <!-- <ul style="list-style: none;">
+                    <li *ngFor="let d of data;">
+                       {{d}} 
+                    </li>
+                  </ul> -->
+              
+                <div *ngFor="let message of messages">
+                  {{message}}
+                </div>
+              <div style="bottom: 0; left: 30px;; position: absolute;">
+                <input [(ngModel)]="message" (keyup)="$event.keyCode == 13 && sendMessage()"/>
+              <button (click)="sendMessage()">Send</button>
+              </div>
+              </div>
+            </mat-card>
+    </div>
+    <div class="col-md">
+
+    </div>
+</div>
+</section>
